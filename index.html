@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <!DOCTYPE html>
+
+    <html lang="es-co">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <title>Desencriptador</title>
+
+        </head>
+        <body>
+            <header>
+                    <img src="img/icono.png" alt="aituruscorp.logo" id="logo">
+            </header>
+                <main class="contenido">
+
+                    <div id="subMain">
+                        <textarea id="ingreso" placeholder= "Ingrese el texto aqui"></textarea>
+
+                        <div id="subContenido">
+
+                            <h4 id="alerta">
+                                <img src="img/informacion.png" alt="warning">  letras minúsculas y sin acentos
+                            </h4>
+    
+                            <div id="botones">
+                                <button id="encriptar" onclick="encriptar();">Encriptar</button>
+                                <button id="desencriptar" onclick="desencriptar();">Desencriptar</button>
+                        </div>
+
+                    </div>
+                    
+                    </div>
+
+                    <div id="resultado">
+                        <img src="img/busqueda.png" alt="imagenBusqueda" id="busqueda">
+                        <h3 id="tituloEncriptado">Ningún mensaje encontrado</h3>
+                        <h4 id="textoMensaje">Ingresa el texto que desees encriptar o desencritar</h4>
+                        <button id="copiar" onclick="copiarTexto();">Copiar</button>
+                        <textarea id="textoEncriptado" ></textarea>
+                            
+                    </div>
+
+                </main> 
+            <footer>
+
+            </footer>
+            <script src="app.js"></script>
+        </body>
+    </html>
+
+

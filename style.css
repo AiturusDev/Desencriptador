@@ -1,0 +1,171 @@
+
+#logo{
+    width: 4em;
+    height: 4em;
+}
+
+body{
+    background-color: #025259;
+    padding: 0em;
+}
+
+header{
+    padding: 2em;
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    
+}
+
+#ingreso{
+    background-color: #025259;
+    border-color: #025259;
+    color: #F4E2DE;
+    text-align: justify;
+    font-size: 2em;
+    height: 10em;
+    padding: 1em;
+}
+
+#alerta{
+    display: flex;
+    align-items: center;
+    color: #F29325;
+}
+#botones{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+#encriptar{
+    background-color: #007172;
+    color: #F4E2DE;
+    width: 27em;
+    height: 4em;
+    border-radius: 1.5em; 
+}
+
+#desencriptar{
+    background-color: #F4E2DE;
+    color: #007172;
+    width: 27em;
+    height: 4em;
+    border-radius: 1.5em;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F4E2DE;
+    color: #D94F04;
+    border-radius: 1.5em;
+    height: 60%;
+    padding: 1em;
+    margin: 0em;
+    width: 20em;
+
+}
+
+#textoEncriptado{
+    margin: 0em;
+    width: 100%;
+    height: 80%;
+    color: #D94F04;
+    padding-bottom: 2em;
+    display: none;
+    background-color: #F4E2DE;
+    border-color: #F4E2DE;
+}
+
+#copiar{
+    background-color: #F4E2DE;
+    color: #007172;
+    width: 100%;
+    height: 4em;
+    border-radius: 1.5em;
+    display: none;
+}
+
+#busqueda{
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    #botones{
+        flex-direction: row;
+        margin: 0.5em;    
+    }
+
+    #ingreso{
+        width: 26em;
+    }
+
+    #resultado{
+        width: 44em;
+    }
+
+    #busqueda{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    body{
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .contenido{
+        margin-left: 10%;
+        flex-flow: row wrap;
+        gap: 0.5em;     
+    }
+
+    #ingreso{
+        width: 90%;  
+    }
+
+    #resultado{
+        order: 2;
+        width: 40%;
+        height: 40%;      
+    }
+
+    #subContenido{
+        width: 90%;       
+    }
+
+    #busqueda{
+        height: 18em;
+        display: block;
+    }
+
+    #textoEncriptado{
+        font-size: 2em;
+        height: 12em;
+    }
+
+    #subMain{
+        box-sizing: border-box;
+        width: 50%;    
+    }
+
+    #encriptar{
+        width: 60em;   
+    }
+
+    #desencriptar{
+        width: 60em;   
+    }
+
+}
